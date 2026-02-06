@@ -31,7 +31,7 @@ async def get_chat_response(messages, system_prompt):
     """Запрос к OpenAI"""
     try:
         response = await client.chat.completions.create(
-            model="gpt-4o-mini",  # или gpt-3.5-turbo
+            model="mistralai/mistral-7b-instruct",,  # или gpt-3.5-turbo
             messages=[{"role": "system", "content": system_prompt}] + list(messages),
             temperature=0.8,  # Чуть выше для креативности
             max_tokens=300
@@ -121,4 +121,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
