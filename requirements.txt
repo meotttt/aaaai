@@ -1,7 +1,9 @@
-python-telegram-bot~=20.0
+python-telegram-bot>=21.10
 psycopg2-binary
 httpx
-openai
+openai>=1.0.0
 python-dotenv
 python-dateutil
+
+
 
