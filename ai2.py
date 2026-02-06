@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 # СЮДА ВСТАВЬ СВОИ КЛЮЧИ
 BOT_TOKEN = '7351866361:AAEzpBbfJhgb0_f1i8KdsIDstbqiMO5hF48'
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
@@ -121,3 +121,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
